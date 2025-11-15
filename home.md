@@ -1,3 +1,49 @@
+# SOBRE
+
+
+
+
+
+<p align="center">
+  <img src="./assets/goat.png" alt="Logo" style="border-radius: 50%;
+  width: 125px; height: 125px;">
+</p>
+
+
+
+
+
+
+Meu nome é **Guilherme Ribeiro**, Programador e Desenvolvedor Front-end com experiência em **HTML/CSS, JavaScript, Marked.js, TailwindCSS, Frameworks e Tecnologias para sites estáticos profissionais, produção e edição de eBooks utilizando Markdown e Pandoc, além de versionamento utilizando Git**.    
+
+
+
+
+
+
+
+
+Para este Portfólio utilizei uma Stack Front-end, baseada em:
+- Marked.js
+- Highlight.js
+- TailwindCSS
+- OpenPropsCSS
+- DOMPurify
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
 # EBOOKS 
 
 
@@ -9,7 +55,7 @@
 
 <p align="center">
   <img src="./assets/goldenbook.png" alt="Banner" 
-  style="width: 145px; height: 145px; border-radius: 50%;">
+  style="width: 175px; height: 175px; border-radius: 50%;">
 
  
  
@@ -17,18 +63,22 @@
 
 
 
-O ebook Git e GitHub Exercícios Práticos Tutorial 2025 traz uma visão completa e atual do controle de versão e da colaboração em projetos de software. Ele cobre fundamentos essenciais como commits, branches e merges, além de fluxos modernos de trabalho. Também apresenta os recursos mais recentes do GitHub, incluindo melhorias de colaboração e automação. É um material ideal para iniciantes e para quem busca dominar as práticas atualizadas do ecossistema. O ebook Visual Studio Code Exercícios Práticos Tutorial 2025 oferece uma introdução prática e atualizada ao editor mais utilizado por estudantes e desenvolvedores. O conteúdo apresenta instalação, configuração inicial, produtividade com extensões e personalização do ambiente. Também aborda integração com Git, atalhos modernos, recursos recentes e melhorias. É um guia direto para quem deseja estudar, organizar projetos e otimizar seu fluxo de trabalho no VS Code.
+O **ebook *Git e GitHub – Exercícios Práticos Tutorial 2025*** apresenta, de forma mais direta e compacta, os conceitos essenciais de controle de versão e colaboração. Ele aborda commits, branches, merges e fluxos modernos de trabalho, além dos recursos recentes do GitHub.
 
-- Sumário/Resumo
-  - Fundamentos
-  - Exercícios Práticos Nível 1
-  - Exercícios Práticos Nível 2
-  - Exercícios Práticos Nível 3
-  - Guias e Referências
-  - EPUB/PDF
+
+
+O **ebook *Visual Studio Code – Exercícios Práticos Tutorial 2025*** complementa o aprendizado com uma introdução prática ao editor mais utilizado por estudantes e desenvolvedores. Traz instalação, configuração, extensões, produtividade, personalização e integração com Git, sempre com foco em exercícios guiados e atualizados.
+
+
+
+
+
+
+
 
 
 - Git e GitHub Exercícios Práticos Tutorial 2025
+  - Introdução e Fundamentos; Exercícios organizados por Níveis de Dificuldade; Recursos e Referências
   - EPUB/PDF
   - 49,00 REAIS
 
@@ -37,13 +87,15 @@ O ebook Git e GitHub Exercícios Práticos Tutorial 2025 traz uma visão complet
   
   
 - Visual Studio Code Exercícios Práticos Tutorial 2025
+  - Introdução e Fundamentos; Exercícios organizados por Níveis de Dificuldade; Recursos e Referências
   - EPUB/PDF
-  - 49,00 REAIS  
+  - 49,00 REAIS
 
 
 
-- Atendimento direto/Envio imediato
-- E-mail: topverbs@gmail.com
+
+- **Atendimento direto/Envio imediato**
+- **E-mail: topverbs@gmail.com**
 
 
 
@@ -77,33 +129,6 @@ O ebook Git e GitHub Exercícios Práticos Tutorial 2025 traz uma visão complet
 
 
 
----
-
-## Sobre
-
-
-Meu nome é **Guilherme Ribeiro**, Programador e Desenvolvedor com experiência em **JavaScript, Node.js, Marked.js, TailwindCSS, Java, Flutter, além de versionamento utilizando Git.**    
-
-
-
-Experiência na produção e edição de eBooks usando Markdown e Pandoc, garantindo padronização, qualidade tipográfica e conversões consistentes entre formatos.
-
-
-
-
-
-Para este Portifólio utilizei uma Stack Front-end para sites estáticos, baseada em:
-- Marked.js
-- Highlight.js
-- TailwindCSS
-- OpenPropsCSS
-- DOMPurify
-
-
-
-
-
----
 
 
 
@@ -120,10 +145,4 @@ Para este Portifólio utilizei uma Stack Front-end para sites estáticos, basead
 
 
 
-
-
-<p align="center">
-  <img src="./assets/goat.png" alt="Logo" style="border-radius: 50%;
-  width: 125px; height: 125px;">
-</p>
 
