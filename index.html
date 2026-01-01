@@ -2,92 +2,377 @@
 <html lang="pt-BR">
 
 <head>
+
+
+
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "LandKit",
+  "description": "Landing page estática pronta para SEO e conversão. Pacote de arquivos HTML, CSS e JavaScript para deploy rápido.",
+  "url": "https://landkit.pages.dev",
+  "brand": {
+    "@type": "Brand",
+    "name": "LandKit"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://landkit.pages.dev",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+
+
+
+
+
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
      <!-- SEO -->
      <meta name="description"
-          content="Guilherme Ribeiro - Desenvolvedor Front-end especializado em sites estáticos modernos, responsivos e landing pages de alta conversão" />
-     <meta name="keywords"
-          content="desenvolvedor frontend, landing pages, sites estáticos, HTML, CSS, JavaScript, Alpine.js" />
+          content="Landing pages profissionais de alta conversão. Entrega em 7 dias, Responsivo e otimizado." />
+     <meta name="keywords" content="landing page, site profissional, desenvolvimento web, html, css, javascript" />
      <meta name="author" content="Guilherme Ribeiro" />
 
-     <!-- Open Graph (compartilhamento redes sociais) -->
-     <meta property="og:title" content="@liberdev - Desenvolvedor Front-end" />
-     <meta property="og:description" content="Sites estáticos modernos e landing pages de alta conversão" />
+     <!-- Open Graph -->
+     <meta property="og:title" content="LANDKIT - Landing Pages Profissionais" />
+     <meta property="og:description" content="Site profissional em 7 dias." />
      <meta property="og:type" content="website" />
-     <meta property="og:url" content="https://seusite.com" />
-     <meta property="og:image" content="https://seusite.com/assets/img/og-image.jpg" />
+     <meta property="og:url" content="https://devgbr86.github.io/profile" />
 
-     <!-- Twitter Card -->
-     <meta name="twitter:card" content="summary_large_image" />
-     <meta name="twitter:title" content="@liberdev - Desenvolvedor Front-end" />
-     <meta name="twitter:description" content="Sites estáticos modernos e landing pages de alta conversão" />
+     <title>LANDKIT - Landing Pages</title>
+     <link rel="icon" href="./assets/icons/portal.svg" type="image/svg+xml" />
 
-     <title>@liberdev</title>
-     <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
-
-     <!-- Preconnect (melhora performance) -->
+     <!-- Preconnect -->
      <link rel="preconnect" href="https://fonts.googleapis.com" />
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
      <link rel="preconnect" href="https://unpkg.com" />
 
      <!-- Roboto Mono Font -->
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700;900&display=swap"
+          rel="stylesheet" />
 
      <!-- AOS Animations -->
      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
-     <!-- Alpine.js (defer para não bloquear renderização) -->
+     <!-- Alpine.js -->
      <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-     <!-- CSS customizado -->
-     <link rel="stylesheet" href="./assets/css/base.css" />
-     <link rel="stylesheet" href="./assets/css/responsive.css" />
+     <!-- CSS -->
+     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body x-data="{ showScrollTop: false }" @scroll.window="showScrollTop = (window.scrollY > 300)">
 
-     <!-- ==================== -->
-     <!-- Botão Scroll to Top -->
-     <!-- ==================== -->
-
-
-     <!-- ==================== -->
-     <!-- Header / Navbar DIRETO -->
-     <!-- ==================== -->
+     <!-- Header -->
      <header>
           <nav x-data="{ mobileMenuOpen: false }">
-               <img src="./assets/img/goat.png" alt="Logo @liberdev" />
-               <div id="pageLinks" class="page-links"></div>
+               <img src="./assets/img/goat.png" alt="LANDKIT Logo" />
+               <div id="pageLinks" class="page-links">
+                    <a href="#hero">Início</a>
+                    <a href="#contato">Contato</a>
+               </div>
           </nav>
      </header>
 
-     <!-- ==================== -->
      <!-- Main Content -->
-     <!-- ==================== -->
      <main id="content">
-          <div data-section="hero"></div>
-          <div data-section="techstack"></div>
-          <div data-section="ebook"></div>
-          <div data-section="contact"></div>
+
+          <!-- SEÇÃO HERO -->
+          <section id="hero" data-aos="fade-up">
+
+               <!-- Logo -->
+               <img src="./assets/img/goat.png" class="section-avatar" alt="LANDKIT Logo" loading="lazy">
+
+               <!-- Headline Principal -->
+               <h1 class="hero-headline">
+                    Sites Estáticos <span class="highlight">Rápidos e Funcionais</span>
+               </h1>
+
+               <!-- Subheadline -->
+               <p class="hero-subheadline">
+                    Landing pages desenvolvidas do zero com HTML, CSS e JavaScript<br>
+                    <strong>Entrega em 7 dias</strong>, arquivos pronto para hospedar em qualquer servidor
+               </p>
+
+
+
+               <!-- Benefícios Grid -->
+               <div class="benefits-grid">
+                    <div class="benefit-card">
+                         <div class="benefit-icon">
+                              <img src="./assets/icons/check.svg" class="icon-benefit" alt="">
+                         </div>
+                         <h3>Responsivo em Tudo</h3>
+                         <p>Funciona perfeitamente em celular, tablet e computador. Qualquer tamanho de tela.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                         <div class="benefit-icon">
+                              <img src="./assets/icons/check.svg" class="icon-benefit" alt="">
+                         </div>
+                         <h3>Carrega Rápido</h3>
+                         <p>Sites leves e otimizados. Carregamento em menos de 2 segundos.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                         <div class="benefit-icon">
+                              <img src="./assets/icons/check.svg" class="icon-benefit" alt="">
+                         </div>
+                         <h3>Preparado para SEO</h3>
+                         <p>Estrutura correta para aparecer no Google. Meta tags e configurações necessárias.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                         <div class="benefit-icon">
+                              <img src="./assets/icons/check.svg" class="icon-benefit" alt="">
+                         </div>
+                         <h3>Preparado para Vender</h3>
+                         <p>Técnicas para conversão, CTA, Copywriting e Redação.</p>
+                    </div>
+               </div>
+
+               <!-- Separador -->
+               <hr class="section-divider">
+
+               <!-- O Que Está Incluso -->
+               <h2 class="section-title">O Que Você Recebe</h2>
+
+               <ul class="services-list">
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Design Moderno</strong> - Layout profissional e limpo que funciona</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>100% Responsivo</strong> - Se adapta automaticamente a qualquer
+                              dispositivo</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Otimizado para Busca</strong> - Configurado para ser encontrado no Google</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Envio direto de arquivos</strong> - pronto para hospedar em qualquer
+                              servidor</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>WhatsApp Integrado</strong> - Links diretos configurados para contato
+                              fácil</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Carregamento Rápido</strong> - Site leve que abre em segundos</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Código Versionado</strong> - Seu projeto salvo e organizado no GitHub</span>
+                    </li>
+                    <li>
+                         <img src="./assets/icons/check.svg" class="icon" alt="">
+                         <span><strong>Suporte Direto</strong> - Contato comigo via WhatsApp quando precisar</span>
+                    </li>
+               </ul>
+
+               <!-- Separador -->
+               <hr class="section-divider">
+
+               <!-- Como Funciona -->
+               <h2 class="section-title">Como Funciona</h2>
+
+               <div class="process-steps">
+                    <div class="step-card">
+                         <div class="step-number">1</div>
+                         <h3>Você Me Conta a Ideia</h3>
+                         <p>Conversamos no WhatsApp sobre seu projeto e o que você precisa.</p>
+                    </div>
+
+                    <div class="step-arrow">→</div>
+
+                    <div class="step-card">
+                         <div class="step-number">2</div>
+                         <h3>Eu Desenvolvo o Site</h3>
+                         <p>Crio tudo do zero em até 7 dias. Você recebe o link para visualizar e pedir ajustes.</p>
+                    </div>
+
+                    <div class="step-arrow">→</div>
+
+                    <div class="step-card">
+                         <div class="step-number">3</div>
+                         <h3>Parte final</h3>
+                         <p>Depois da aprovação, o cliente recebe todos os arquivos e instruções</p>
+                    </div>
+               </div>
+
+               <!-- Separador -->
+               <hr class="section-divider">
+
+               <!-- Tech Stack -->
+               <h3 class="tech-title">Tecnologias Que Uso</h3>
+               <div class="tech-badges">
+                    <span class="badge">HTML5</span>
+                    <span class="badge">CSS3</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">React.js</span>
+                    <span class="badge">Alpine.js</span>
+                    <span class="badge">TailwindCSS</span>
+                    <span class="badge">Git/GitHub</span>
+                    <span class="badge">SEO</span>
+                    <span class="badge">Performance</span>
+               </div>
+
+               <!-- Separador -->
+               <hr class="section-divider">
+
+               <!-- Demonstração -->
+               <h2 class="section-title">Veja Exemplos Reais</h2>
+
+               <p class="demo-intro">
+                    Templates profissionais que já estão no ar e funcionando.
+               </p>
+
+               <!-- Features Comuns -->
+               <ul class="demo-features-global">
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> Carregamento rápido
+                    </li>
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> Responsivo em todos dispositivos
+                    </li>
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> Animações suaves</li>
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> SEO configurado</li>
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> WhatsApp integrado</li>
+                    <li><img src="./assets/icons/check.svg" class="icon-tiny" alt=""> Design consistente</li>
+               </ul>
+
+               <!-- Templates Grid -->
+               <div class="templates-showcase">
+
+                    <!-- Template 1: CoffeeShop -->
+                    <div class="template-card">
+                         <div class="template-header">
+                              <h3>Coffeeshop</h3>
+                              <span class="template-tag">Gastronomia</span>
+                         </div>
+                         <p class="template-description">
+                              Landing page para cafeteria. Design acolhedor com foco em apresentar o menu e ambiente.
+                         </p>
+                         <a href="https://devgbr86.github.io/coffeeshop/" target="_blank" rel="noopener noreferrer"
+                              class="btn-demo">
+                              <img src="./assets/icons/preview.svg" class="icon" alt="">
+                              Ver Coffeeshop Template
+                         </a>
+                    </div>
+
+                    <!-- Template 2: Lawbringer -->
+                    <div class="template-card">
+                         <div class="template-header">
+                              <h3>Lawbringer</h3>
+                              <span class="template-tag">Jurídico</span>
+                         </div>
+                         <p class="template-description">
+                              Site para escritório de advocacia. Layout profissional e sério com informações claras.
+                         </p>
+                         <a href="https://devgbr86.github.io/lawbringer/" target="_blank" rel="noopener noreferrer"
+                              class="btn-demo">
+                              <img src="./assets/icons/preview.svg" class="icon" alt="">
+                              Ver Lawbringer Template
+                         </a>
+                    </div>
+
+                    <!-- Template 3: Nutripharma -->
+                    <div class="template-card">
+                         <div class="template-header">
+                              <h3>Healthpack</h3>
+                              <span class="template-tag">Saúde</span>
+                         </div>
+                         <p class="template-description">
+                              Landing para clínica médica. Design limpo e objetivo focado em agendamentos.
+                         </p>
+                         <a href="https://devgbr86.github.io/healthpack/" target="_blank" rel="noopener noreferrer"
+                              class="btn-demo">
+                              <img src="./assets/icons/preview.svg" class="icon" alt="">
+                              Ver Healthpack Template
+                         </a>
+                    </div>
+
+               </div>
+
+          </section>
+
+          <!-- SEÇÃO CONTATO -->
+          <section id="contato" data-aos="fade-up">
+
+               <!-- Headline -->
+               <h1 class="contact-headline">
+                    Pronto Para Parar de
+                    <span class="highlight-contact">Perder Clientes?</span>
+               </h1>
+
+               <p class="contact-subhead">
+                    Fale comigo AGORA e tenha seu site profissional em 7 dias.
+               </p>
+
+               <!-- WhatsApp Destaque -->
+               <div class="whatsapp-hero">
+                    <div class="whatsapp-icon-large">
+                         <img src="./assets/icons/whatsapp.svg" class="icon-whatsapp-large" alt="WhatsApp">
+                    </div>
+                    <h2>WhatsApp - Resposta Imediata</h2>
+                    <p>Tire suas dúvidas agora.</p>
+                    <a href="https://wa.me/5531996981103?text=Oi!%20Vim%20do%20site%20e%20quero%20saber%20mais%20sobre%20landing%20pages"
+                         target="_blank" rel="noopener noreferrer" class="btn-whatsapp-main">
+                         Chamar no WhatsApp Agora
+                    </a>
+               </div>
+
+               <!-- Outros Canais -->
+               <h3 class="other-channels-title">Email para Contato</h3>
+
+               <div class="contact-channels">
+
+                    <!-- Email -->
+                    <a href="mailto:topverbs@gmail.com?subject=Orçamento%20Landing%20Page&body=Olá!%20Gostaria%20de%20um%20orçamento%20para..."
+                         class="contact-channel-card">
+                         <div class="channel-icon channel-icon-email">
+                              <img src="./assets/icons/mail.svg" class="icon-channel" alt="Email">
+                         </div>
+                         <div class="channel-content">
+                              <h3></h3>
+                              <p>topverbs@gmail.com</p>
+                              <span class="channel-tag">Resposta em 24h</span>
+                         </div>
+                    </a>
+
+               </div>
+
+          </section>
+
      </main>
 
-     <!-- ==================== -->
+     <!-- WhatsApp Flutuante -->
+     <a href="https://wa.me/5531996981103?text=Oi!%20Vim%20do%20site%20LANDKIT%20e%20quero%20um%20orçamento"
+          class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <img src="./assets/icons/whatsapp.svg" class="icon-whatsapp-float" alt="WhatsApp">
+     </a>
+
      <!-- Footer -->
-     <!-- ==================== -->
-     <div data-section="footer"></div>
+     <footer>
+          <p><a href="https://www.linkedin.com/in/devgbr/">LinkedIn</a></p>
+          <p><a href="https://github.com/devgbr86">GitHub</a></p>
+          <p>© 2025 LANDKIT - Landing Pages</p>
 
-     <!-- ==================== -->
+     </footer>
+
      <!-- Scripts -->
-     <!-- ==================== -->
-     <!-- AOS Library -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-     <!-- App Scripts (ordem importa!) -->
-     <script src="./js/loader.js"></script>
-     <script src="./js/main.js"></script>
+     <script src="./script.js"></script>
 
 </body>
 

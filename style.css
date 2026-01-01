@@ -1,0 +1,990 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --bg-dark: #1a1a1a;
+     --bg-darker: #0f0f0f;
+     --bg-card: #242424;
+     --orange: #ff6b35;
+     --orange-hover: #ff8555;
+     --white: #ffffff;
+     --gray-light: #e0e0e0;
+     --gray: #9e9e9e;
+     --shadow: rgba(0, 0, 0, 0.3);
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     font-family: 'Roboto Mono', monospace;
+     background-color: var(--bg-dark);
+     color: var(--gray-light);
+     line-height: 1.6;
+     overflow-x: hidden;
+}
+
+/* Header & Navigation */
+header {
+     background: var(--bg-darker);
+     padding: 1rem 2rem;
+     position: sticky;
+     top: 0;
+     z-index: 100;
+     box-shadow: 0 2px 10px var(--shadow);
+}
+
+nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+nav img {
+     height: 50px;
+     width: auto;
+}
+
+.page-links {
+     display: flex;
+     gap: 2rem;
+     align-items: center;
+}
+
+.page-links a {
+     color: var(--gray-light);
+     text-decoration: none;
+     font-weight: 500;
+     transition: color 0.3s;
+     white-space: nowrap;
+}
+
+.page-links a:hover {
+     color: var(--orange);
+}
+
+/* Main Content */
+main {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 2rem;
+}
+
+section {
+     padding: 4rem 0;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+     color: var(--white);
+     margin-bottom: 1rem;
+}
+
+.hero-headline {
+     font-size: 3rem;
+     font-weight: 900;
+     text-align: center;
+     line-height: 1.2;
+     margin-bottom: 1.5rem;
+}
+
+.contact-headline {
+     font-size: 2.5rem;
+     font-weight: 900;
+     text-align: center;
+     line-height: 1.2;
+     margin-bottom: 1rem;
+}
+
+.highlight,
+.highlight-contact {
+     color: var(--orange);
+     position: relative;
+}
+
+.hero-subheadline {
+     font-size: 1.25rem;
+     text-align: center;
+     color: var(--gray);
+     margin-bottom: 2rem;
+}
+
+.contact-subhead {
+     font-size: 1.2rem;
+     text-align: center;
+     color: var(--gray);
+     margin-bottom: 2rem;
+}
+
+.section-title {
+     font-size: 2rem;
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.tech-title {
+     font-size: 1.5rem;
+     text-align: center;
+     margin-bottom: 1.5rem;
+}
+
+/* Section Avatar */
+.section-avatar {
+     display: block;
+     margin: 0 auto 2rem;
+     width: 120px;
+     height: 120px;
+     border-radius: 50%;
+     border: 4px solid var(--orange);
+}
+
+/* ============================================
+   ÍCONES APRIMORADOS - DESIGN LIMPO E MODERNO
+   ============================================ */
+
+/* Botão Hero Primary - Ícone clean com animação suave */
+.btn-hero-primary {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.75rem;
+     background: var(--orange);
+     color: var(--white);
+     padding: 1.25rem 2.5rem;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 1.1rem;
+     transition: all 0.3s ease;
+     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.25);
+}
+
+.btn-hero-primary:hover {
+     background: var(--orange-hover);
+     transform: translateY(-2px);
+     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.35);
+}
+
+.btn-hero-primary i {
+     width: 24px;
+     height: 24px;
+     stroke: var(--white);
+     fill: none;
+     stroke-width: 2;
+     transition: transform 0.3s ease;
+}
+
+.btn-hero-primary:hover i {
+     transform: scale(1.1);
+}
+
+/* Botões Demo e CTA Final */
+.btn-demo,
+.btn-cta-final {
+     display: inline-flex;
+     align-items: center;
+     gap: 0.5rem;
+     background: var(--bg-card);
+     color: var(--orange);
+     padding: 1rem 2rem;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 600;
+     border: 2px solid var(--orange);
+     transition: all 0.3s ease;
+}
+
+.btn-demo:hover,
+.btn-cta-final:hover {
+     background: var(--orange);
+     color: var(--white);
+     transform: translateY(-2px);
+     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.btn-demo i,
+.btn-cta-final i {
+     width: 20px;
+     height: 20px;
+     stroke: currentColor;
+     fill: none;
+     stroke-width: 2;
+     transition: transform 0.3s ease;
+}
+
+.btn-demo:hover i,
+.btn-cta-final:hover i {
+     transform: scale(1.1);
+}
+
+.btn-whatsapp-main {
+     display: inline-block;
+     background: var(--orange);
+     color: var(--white);
+     padding: 1rem 2rem;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: 700;
+     transition: all 0.3s ease;
+     margin-top: 1rem;
+}
+
+.btn-whatsapp-main:hover {
+     background: var(--orange-hover);
+     transform: translateY(-2px);
+}
+
+/* CTA Containers */
+.cta-primary-container {
+     text-align: center;
+     margin: 3rem 0;
+}
+
+.cta-subtitle {
+     margin-top: 1rem;
+     color: var(--gray);
+     font-size: 0.9rem;
+}
+
+.cta-final-container {
+     text-align: center;
+     margin: 4rem 0;
+     padding: 3rem;
+     background: var(--bg-card);
+     border-radius: 12px;
+     border: 2px solid var(--orange);
+}
+
+.cta-final-headline {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+}
+
+.cta-final-text {
+     font-size: 1.1rem;
+     color: var(--gray);
+     margin-bottom: 2rem;
+}
+
+/* Urgency Banners */
+.urgency-banner,
+.urgency-contact-banner {
+     background: linear-gradient(135deg, var(--orange), #ff8555);
+     color: var(--white);
+     padding: 1rem 2rem;
+     border-radius: 8px;
+     text-align: center;
+     margin: 2rem auto;
+     max-width: 600px;
+     font-weight: 600;
+     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.25);
+}
+
+/* ============================================
+   BENEFITS GRID - ÍCONES MINIMALISTAS
+   ============================================ */
+
+.benefits-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 2rem;
+     margin: 3rem 0;
+}
+
+.benefit-card {
+     background: var(--bg-card);
+     padding: 2rem;
+     border-radius: 12px;
+     text-align: center;
+     transition: all 0.3s ease;
+     border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+     transform: translateY(-5px);
+     border-color: var(--orange);
+     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+}
+
+.benefit-icon {
+     width: 64px;
+     height: 64px;
+     margin: 0 auto 1.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
+     border-radius: 16px;
+     transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.25), rgba(255, 107, 53, 0.1));
+     transform: translateY(-3px);
+}
+
+.benefit-icon i {
+     width: 32px;
+     height: 32px;
+     stroke: var(--orange);
+     fill: var(--orange);
+     stroke-width: 0;
+}
+
+.benefit-card h3 {
+     font-size: 1.2rem;
+     margin-bottom: 0.5rem;
+}
+
+.benefit-card p {
+     color: var(--gray);
+}
+
+/* ============================================
+   SERVICES LIST - ÍCONES SIMPLES E ELEGANTES
+   ============================================ */
+
+.services-list {
+     list-style: none;
+     max-width: 800px;
+     margin: 2rem auto;
+}
+
+.services-list li {
+     display: flex;
+     align-items: flex-start;
+     gap: 1rem;
+     padding: 1rem;
+     margin-bottom: 1rem;
+     background: var(--bg-card);
+     border-radius: 8px;
+     transition: all 0.3s ease;
+     border-left: 3px solid transparent;
+}
+
+.services-list li:hover {
+     transform: translateX(8px);
+     border-left-color: var(--orange);
+     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.12);
+}
+
+.services-list i {
+     width: 24px;
+     height: 24px;
+     min-width: 24px;
+     flex-shrink: 0;
+     stroke: var(--orange);
+     fill: var(--orange);
+     stroke-width: 0;
+     transition: transform 0.3s ease;
+}
+
+.services-list li:hover i {
+     transform: scale(1.15);
+}
+
+/* ============================================
+   PROCESS STEPS - NÚMEROS MODERNOS
+   ============================================ */
+
+.process-steps {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     margin: 3rem 0;
+}
+
+.step-card {
+     background: var(--bg-card);
+     padding: 2rem;
+     border-radius: 12px;
+     text-align: center;
+     max-width: 300px;
+     flex: 1;
+     min-width: 250px;
+     border: 2px solid var(--orange);
+     transition: all 0.3s ease;
+}
+
+.step-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+}
+
+.step-number {
+     width: 64px;
+     height: 64px;
+     background: var(--orange);
+     color: var(--white);
+     border-radius: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 2rem;
+     font-weight: 900;
+     margin: 0 auto 1rem;
+     transition: all 0.3s ease;
+}
+
+.step-card:hover .step-number {
+     transform: scale(1.1);
+     box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+}
+
+.step-arrow {
+     font-size: 2rem;
+     color: var(--orange);
+     font-weight: 900;
+}
+
+/* Tech Badges */
+.tech-badges {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+     margin: 2rem 0;
+}
+
+.badge {
+     background: var(--bg-card);
+     color: var(--orange);
+     padding: 0.75rem 1.5rem;
+     border-radius: 50px;
+     font-weight: 600;
+     border: 2px solid var(--orange);
+     transition: all 0.3s ease;
+}
+
+.badge:hover {
+     background: var(--orange);
+     color: var(--white);
+     transform: scale(1.05);
+     box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* ============================================
+   DEMO SECTION - TEMPLATES SHOWCASE
+   ============================================ */
+
+.demo-intro {
+     text-align: center;
+     font-size: 1.1rem;
+     color: var(--gray);
+     margin-bottom: 2rem;
+     max-width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.demo-features-global {
+     list-style: none;
+     max-width: 800px;
+     margin: 2rem auto 3rem;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 1rem;
+}
+
+.demo-features-global li {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     padding: 0.75rem;
+     background: var(--bg-card);
+     border-radius: 8px;
+     color: var(--gray-light);
+     transition: all 0.3s ease;
+}
+
+.demo-features-global li:hover {
+     transform: translateX(5px);
+     border-left: 3px solid var(--orange);
+}
+
+.templates-showcase {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 2rem;
+     margin: 3rem 0;
+}
+
+.template-card {
+     background: var(--bg-card);
+     padding: 2rem;
+     border-radius: 12px;
+     border: 2px solid transparent;
+     transition: all 0.3s ease;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+}
+
+.template-card:hover {
+     border-color: var(--orange);
+     transform: translateY(-5px);
+     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+}
+
+.template-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 1rem;
+}
+
+.template-header h3 {
+     font-size: 1.5rem;
+     margin: 0;
+     color: var(--white);
+}
+
+.template-tag {
+     background: var(--orange);
+     color: var(--white);
+     padding: 0.35rem 1rem;
+     border-radius: 20px;
+     font-size: 0.85rem;
+     font-weight: 600;
+     white-space: nowrap;
+}
+
+.template-description {
+     color: var(--gray);
+     line-height: 1.6;
+     flex-grow: 1;
+}
+
+.template-card .btn-demo {
+     width: 100%;
+     justify-content: center;
+     margin-top: auto;
+}
+
+/* Section Divider */
+.section-divider {
+     border: none;
+     height: 2px;
+     background: linear-gradient(to right, transparent, var(--orange), transparent);
+     margin: 3rem 0;
+}
+
+/* ============================================
+   CONTACT SECTION - ÍCONES DESTACADOS
+   ============================================ */
+
+.whatsapp-hero {
+     background: var(--bg-card);
+     padding: 3rem;
+     border-radius: 12px;
+     text-align: center;
+     margin: 3rem 0;
+     border: 2px solid var(--orange);
+     transition: all 0.3s ease;
+}
+
+.whatsapp-hero:hover {
+     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+}
+
+.whatsapp-icon-large {
+     width: 80px;
+     height: 80px;
+     margin: 0 auto 1.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), rgba(37, 211, 102, 0.1));
+     border-radius: 20px;
+     transition: all 0.3s ease;
+}
+
+.whatsapp-hero:hover .whatsapp-icon-large {
+     transform: scale(1.05);
+     background: linear-gradient(135deg, rgba(37, 211, 102, 0.3), rgba(37, 211, 102, 0.15));
+}
+
+.whatsapp-icon-large i {
+     width: 48px;
+     height: 48px;
+     color: #25D366;
+     stroke: #25D366;
+     fill: none;
+     stroke-width: 2;
+}
+
+.other-channels-title {
+     text-align: center;
+     margin: 3rem 0 2rem;
+     font-size: 1.5rem;
+}
+
+.contact-channels {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 2rem;
+     margin: 2rem 0;
+}
+
+.contact-channel-card {
+     display: flex;
+     align-items: center;
+     gap: 1.5rem;
+     background: var(--bg-card);
+     padding: 2rem;
+     border-radius: 12px;
+     text-decoration: none;
+     transition: all 0.3s ease;
+     border: 2px solid transparent;
+}
+
+.contact-channel-card:hover {
+     border-color: var(--orange);
+     transform: translateY(-5px);
+     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
+}
+
+.channel-icon {
+     width: 60px;
+     height: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-shrink: 0;
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
+     border-radius: 14px;
+     transition: all 0.3s ease;
+}
+
+.contact-channel-card:hover .channel-icon {
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.25), rgba(255, 107, 53, 0.1));
+     transform: scale(1.05);
+}
+
+.channel-icon i {
+     width: 32px;
+     height: 32px;
+     stroke: var(--white);
+     fill: none;
+     stroke-width: 2;
+}
+
+.channel-content h3 {
+     font-size: 1.2rem;
+     margin-bottom: 0.5rem;
+     color: var(--white);
+}
+
+.channel-content p {
+     color: var(--gray);
+     margin-bottom: 0.5rem;
+}
+
+.channel-tag {
+     display: inline-block;
+     background: var(--orange);
+     color: var(--white);
+     padding: 0.25rem 0.75rem;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     font-weight: 600;
+}
+
+/* ============================================
+   GUARANTEE - ÍCONE MINIMALISTA
+   ============================================ */
+
+.guarantee-final {
+     background: var(--bg-card);
+     padding: 2rem;
+     border-radius: 12px;
+     text-align: center;
+     margin: 3rem 0;
+     border: 2px solid var(--orange);
+}
+
+.guarantee-icon-final {
+     width: 64px;
+     height: 64px;
+     margin: 0 auto 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 107, 53, 0.05));
+     border-radius: 16px;
+     transition: all 0.3s ease;
+}
+
+.guarantee-final:hover .guarantee-icon-final {
+     background: linear-gradient(135deg, rgba(255, 107, 53, 0.25), rgba(255, 107, 53, 0.1));
+     transform: scale(1.05);
+}
+
+.guarantee-icon-final i {
+     width: 32px;
+     height: 32px;
+     stroke: var(--orange);
+     fill: var(--orange);
+     stroke-width: 0;
+}
+
+/* Footer */
+footer {
+     background: var(--bg-darker);
+     padding: 2rem;
+     text-align: center;
+     color: var(--gray);
+     margin-top: 4rem;
+}
+
+footer p {
+     margin: 0.5rem 0;
+}
+
+footer a {
+     color: var(--orange);
+     text-decoration: none;
+     transition: color 0.3s ease;
+}
+
+footer a:hover {
+     color: var(--orange-hover);
+}
+
+/* ============================================
+   WHATSAPP FLOAT BUTTON - DESIGN MODERNO
+   ============================================ */
+
+.whatsapp-float {
+     position: fixed;
+     bottom: 30px;
+     right: 30px;
+     width: 60px;
+     height: 60px;
+     background: linear-gradient(135deg, #25D366, #1fb855);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+     z-index: 1000;
+     transition: all 0.3s ease;
+     animation: float-gentle 3s ease-in-out infinite;
+}
+
+@keyframes float-gentle {
+
+     0%,
+     100% {
+          transform: translateY(0);
+     }
+
+     50% {
+          transform: translateY(-8px);
+     }
+}
+
+.whatsapp-float:hover {
+     transform: scale(1.1);
+     box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+     animation: none;
+}
+
+.whatsapp-float i {
+     width: 32px;
+     height: 32px;
+     color: var(--white);
+     stroke: var(--white);
+     fill: none;
+     stroke-width: 2;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+     .hero-headline {
+          font-size: 2rem;
+     }
+
+     .contact-headline {
+          font-size: 1.8rem;
+     }
+
+     .hero-subheadline {
+          font-size: 1rem;
+     }
+
+     header {
+          padding: 1rem;
+     }
+
+     nav {
+          justify-content: flex-end;
+          gap: 1rem;
+     }
+
+     nav img {
+          height: 35px;
+     }
+
+     .page-links {
+          gap: 1rem;
+     }
+
+     .page-links a {
+          font-size: 0.85rem;
+     }
+
+     .benefits-grid {
+          grid-template-columns: 1fr;
+     }
+
+     .templates-showcase {
+          grid-template-columns: 1fr;
+     }
+
+     .demo-features-global {
+          grid-template-columns: 1fr;
+     }
+
+     .process-steps {
+          flex-direction: column;
+     }
+
+     .step-arrow {
+          transform: rotate(90deg);
+     }
+
+     .contact-channels {
+          grid-template-columns: 1fr;
+     }
+
+     main {
+          padding: 1rem;
+     }
+
+     section {
+          padding: 2rem 0;
+     }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+     .hero-headline {
+          font-size: 1.5rem;
+     }
+
+     .contact-headline {
+          font-size: 1.5rem;
+     }
+
+     .section-title {
+          font-size: 1.5rem;
+     }
+
+     header {
+          padding: 0.75rem 1rem;
+     }
+
+     nav {
+          justify-content: left;
+          gap: 0.95rem;
+     }
+
+     nav img {
+          height: 30px;
+     }
+
+     .page-links {
+          gap: 0.75rem;
+     }
+
+     .page-links a {
+          font-size: 0.8rem;
+     }
+
+     .btn-hero-primary {
+          padding: 1rem 1.5rem;
+          font-size: 0.95rem;
+     }
+
+     .cta-final-container {
+          padding: 2rem 1rem;
+     }
+
+     .whatsapp-float {
+          width: 55px;
+          height: 55px;
+          bottom: 20px;
+          right: 20px;
+     }
+
+     .whatsapp-float i {
+          width: 28px;
+          height: 28px;
+     }
+
+     .tech-badges {
+          gap: 0.5rem;
+     }
+
+     .badge {
+          padding: 0.5rem 1rem;
+          font-size: 0.85rem;
+     }
+
+     .step-card,
+     .benefit-card {
+          padding: 1.5rem;
+     }
+}
+
+.icon {
+     width: 24px;
+     height: 24px;
+     object-fit: contain;
+     flex-shrink: 0;
+}
+
+.icon-tiny {
+     width: 18px;
+     height: 18px;
+     object-fit: contain;
+     flex-shrink: 0;
+}
+
+/* Ícones nos Benefit Cards - SEM FILTROS */
+.icon-benefit {
+     width: 32px;
+     height: 32px;
+     object-fit: contain;
+}
+
+/* Ícone WhatsApp Grande - SEM FILTROS */
+.icon-whatsapp-large {
+     width: 48px;
+     height: 48px;
+     object-fit: contain;
+}
+
+/* Ícones dos Canais de Contato - SEM FILTROS */
+.icon-channel {
+     width: 32px;
+     height: 32px;
+     object-fit: contain;
+}
+
+/* Ícone WhatsApp Flutuante - SEM FILTROS */
+.icon-whatsapp-float {
+     width: 32px;
+     height: 32px;
+     object-fit: contain;
+}
